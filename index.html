@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevWrite // A Modern Tech Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo">Dev<span>Write</span></a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#" class="btn-primary">Write a Post</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Trending Topic</span>
+                <h1>Where developer thoughts shape the future of coding.</h1>
+                <p>Join a community of 500k+ developers sharing real-world tutorials, architecture breakdowns, and career insights daily.</p>
+                <div class="hero-cta">
+                    <a href="#latest" class="btn-secondary">Start Reading</a>
+                    <a href="#newsletter" class="link-cta">Subscribe to Newsletter &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container main-layout">
+        
+        <div class="main-content">
+            
+            <section class="featured-section">
+                <h2 class="section-title">Featured Article</h2>
+                <article class="featured-card">
+                    <div class="featured-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1618401471353-b98aedd07871?auto=format&fit=crop&w=1200&q=80" alt="Featured Article Image" class="responsive-img">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="category-tag tag-tech">Architecture</span>
+                            <span class="read-time">8 min read</span>
+                        </div>
+                        <h3 class="card-title"><a href="#">Scaling Microservices Globally: Lessons Learned from High-Traffic Downtime</a></h3>
+                        <p class="card-excerpt">An in-depth postmortem analysis of a multi-region database failure, the quick fixes we attempted, and the architectural principles that ultimately saved our production environment...</p>
+                        <div class="author-meta">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Author Alex" class="avatar-sm">
+                            <div>
+                                <h4>Alex Rivera</h4>
+                                <p>June 18, 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section id="latest" class="latest-section">
+                <h2 class="section-title">Latest Blog Posts</h2>
+                <div class="posts-grid">
+                    
+                    <article class="blog-card">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=600&q=80" alt="Post Image">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-meta">
+                                <span class="category-tag tag-react">React</span>
+                                <span class="read-time">5 min read</span>
+                            </div>
+                            <h3 class="post-title"><a href="#">Mastering React Server Components in 2026</a></h3>
+                            <p class="post-excerpt">Stop fetching data on the client. Learn how server-first rendering paradigms can decrease your bundle sizes by up to 70%.</p>
+                            <div class="author-meta">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Author" class="avatar-sm">
+                                <div>
+                                    <h4>Marcus Chen</h4>
+                                    <p>June 19, 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Post Image">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-meta">
+                                <span class="category-tag tag-css">CSS3</span>
+                                <span class="read-time">4 min read</span>
+                            </div>
+                            <h3 class="post-title"><a href="#">Modern CSS Layouts Beyond Flexbox and Grid</a></h3>
+                            <p class="post-excerpt">Explore container queries, subgrid, and anchor positioning to build layout structures you never thought possible without JS.</p>
+                            <div class="author-meta">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Author" class="avatar-sm">
+                                <div>
+                                    <h4>Sarah Jenkins</h4>
+                                    <p>June 15, 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=600&q=80" alt="Post Image">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-meta">
+                                <span class="category-tag tag-devops">DevOps</span>
+                                <span class="read-time">6 min read</span>
+                            </div>
+                            <h3 class="post-title"><a href="#">Dockerizing Complex Monoliths Safely</a></h3>
+                            <p class="post-excerpt">Step-by-step guide to containing legacy applications without introducing massive multi-stage build overheads.</p>
+                            <div class="author-meta">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Author" class="avatar-sm">
+                                <div>
+                                    <h4>David K.</h4>
+                                    <p>June 12, 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=600&q=80" alt="Post Image">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-meta">
+                                <span class="category-tag tag-ai">AI</span>
+                                <span class="read-time">10 min read</span>
+                            </div>
+                            <h3 class="post-title"><a href="#">Why Small Language Models are Winning the Edge</a></h3>
+                            <p class="post-excerpt">Massive clusters aren't always the answer. See how specialized, distilled 3B parameter models are outperforming LLMs locally.</p>
+                            <div class="author-meta">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Author" class="avatar-sm">
+                                <div>
+                                    <h4>Alex Rivera</h4>
+                                    <p>June 10, 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <section class="categories-section">
+                <h2 class="section-title">Explore by Category</h2>
+                <div class="category-pills">
+                    <a href="#" class="pill">Web Development <span class="count">42</span></a>
+                    <a href="#" class="pill">DevOps & Cloud <span class="count">28</span></a>
+                    <a href="#" class="pill">Software Architecture <span class="count">19</span></a>
+                    <a href="#" class="pill">Artificial Intelligence <span class="count">31</span></a>
+                    <a href="#" class="pill">UI/UX Design <span class="count">14</span></a>
+                    <a href="#" class="pill">Career Growth <span class="count">22</span></a>
+                </div>
+            </section>
+
+            <section class="author-spotlight">
+                <div class="author-box">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" alt="Featured Author Spotlight" class="avatar-lg">
+                    <div class="author-details">
+                        <span class="sub-heading">Author Spotlight</span>
+                        <h3>Alex Rivera</h3>
+                        <p class="author-bio">Principal Infrastructure Engineer & technical writer. Passionate about decoupling monoliths, writing performant Rust, and mentoring junior engineers. Previously staff engineer at Netflix.</p>
+                        <div class="author-socials">
+                            <a href="#">Twitter</a>
+                            <a href="#">GitHub</a>
+                            <a href="#">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <aside class="sidebar">
+            
+            <div class="sidebar-widget widget-search">
+                <h3 class="widget-title">Search Articles</h3>
+                <form class="search-form" action="#" method="GET">
+                    <input type="text" placeholder="Type keywords..." aria-label="Search posts">
+                    <button type="submit" class="btn-search">Search</button>
+                </form>
+            </div>
+
+            <div class="sidebar-widget widget-recent">
+                <h3 class="widget-title">Trending Right Now</h3>
+                <ul class="recent-posts-list">
+                    <li>
+                        <a href="#" class="recent-title">Git Commands Every Senior Developer Should Know By Heart</a>
+                        <span class="recent-date">June 20, 2026</span>
+                    </li>
+                    <li>
+                        <a href="#" class="recent-title">Is it Time to Move Away from Next.js? An Objective Review</a>
+                        <span class="recent-date">June 19, 2026</span>
+                    </li>
+                    <li>
+                        <a href="#" class="recent-title">The Complete Guide to CSS Container Queries</a>
+                        <span class="recent-date">June 14, 2026</span>
+                    </li>
+                    <li>
+                        <a href="#" class="recent-title">Understanding the Event Loop Once and For All</a>
+                        <span class="recent-date">June 11, 2026</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget widget-newsletter">
+                <div class="sidebar-promo-box">
+                    <h4>Get Tech Briefings</h4>
+                    <p>Join our private mailing list to get advanced system architecture breakdowns straight to your inbox.</p>
+                    <form action="#" class="sidebar-form">
+                        <input type="email" placeholder="Your work email" required>
+                        <button type="submit" class="btn-block">Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <section id="newsletter" class="newsletter-banner">
+        <div class="container newsletter-container">
+            <h2>Never miss an architectural breakdown.</h2>
+            <p>Every Sunday we send a breakdown of scaling hurdles, framework updates, and curated code repositories. No spam, ever.</p>
+            <form class="newsletter-form" action="#" method="POST">
+                <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+                <button type="submit" class="btn-accent">Subscribe to Newsletter</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">Dev<span>Write</span></a>
+                <p>An indie technical publication exploring the engineering mechanics behind high-scale web products.</p>
+            </div>
+            <div class="footer-links-grid">
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Open Source</a></li>
+                        <li><a href="#">Snippets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Code of Conduct</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 DevWrite Media Inc. Built with semantic HTML5 & CSS3.</p>
+            <div class="social-icons">
+                <a href="#" aria-label="Twitter">TW</a>
+                <a href="#" aria-label="GitHub">GH</a>
+                <a href="#" aria-label="LinkedIn">LI</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
